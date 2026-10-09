@@ -65,6 +65,31 @@ export default function TabLayout() {
           ),
         }}
       />
+
+      {/* ⬇️ AJOUT : nouvelle tab */}
+      <Tabs.Screen
+        name="three"
+        options={{
+          title: 'Tab Three',
+          tabBarIcon: ({ color }) => (
+            <SymbolView
+              name={{
+                ios: 'chevron.left.forwardslash.chevron.right',
+                android: 'code',
+                web: 'code',
+              }}
+              tintColor={color}
+              size={28}
+            />
+          ),
+        }}
+      />
+
+      {/* ⬇️ AJOUT : cache le modal de la barre de tabs */}
+      <Tabs.Screen
+        name="mymodal"
+        options={{ href: null }}
+      />
     </Tabs>
   );
 }
