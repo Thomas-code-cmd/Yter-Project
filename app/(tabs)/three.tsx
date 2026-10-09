@@ -6,7 +6,7 @@ export default function TabThreeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab Three</Text>
-      <Button title="Ouvrir le modal" onPress={() => router.push('/mymodal')} />
+      <Button title="Ouvrir mon modal" onPress={() => router.push('/mymodal')} />
     </View>
   );
 }
